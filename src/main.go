@@ -5,16 +5,9 @@ import (
 )
 
 func main() {
-	var buff = [...]int{1, 2, 3, 4, 5}
+	buff := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
 	fmt.Println(buff)
-	var buff_1 [5]int = [5]int{1, 2, 3, 4, 5}
-	fmt.Println(buff_1)
-	var buff_2 = [5]int{
-		1,
-		2,
-		3,
-		4,
-		5,
+	for val := range buff {
+		fmt.Println(val)
 	}
-	fmt.Println(buff_2)
 }
